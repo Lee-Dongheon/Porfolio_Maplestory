@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A0FA76DD-A6F8-4738-92E9-70A2E4F6E697}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SBSProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <TargetName>$(ProjectName)64_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <TargetName>$(ProjectName)64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Collider\ColliderPixel.cpp" />
+    <ClCompile Include="Collider\ColliderPoint.cpp" />
+    <ClCompile Include="Collider\Collider.cpp" />
+    <ClCompile Include="Collider\ColliderRect.cpp" />
+    <ClCompile Include="Collider\CollisionManager.cpp" />
+    <ClCompile Include="Core\Animation.cpp" />
+    <ClCompile Include="Core\BackCam.cpp" />
+    <ClCompile Include="Core\Camera.cpp" />
+    <ClCompile Include="Core\Core.cpp" />
+    <ClCompile Include="Core\CriticalSectionObj.cpp" />
+    <ClCompile Include="Core\Input.cpp" />
+    <ClCompile Include="Core\Mouse.cpp" />
+    <ClCompile Include="Core\Ref.cpp" />
+    <ClCompile Include="Core\ServerManager.cpp" />
+    <ClCompile Include="Core\Timer.cpp" />
+    <ClCompile Include="DamageManager\DamageManager.cpp" />
+    <ClCompile Include="ItemManager\ItemManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Math.cpp" />
+    <ClCompile Include="Object\MoveObj\Monster\GreenMushroom\GreenMushroom.cpp" />
+    <ClCompile Include="Object\MoveObj\Monster\Monster.cpp" />
+    <ClCompile Include="Object\MoveObj\Monster\Mushmom\Mushmom.cpp" />
+    <ClCompile Include="Object\MoveObj\Monster\Mushroom\Mushroom.cpp" />
+    <ClCompile Include="Object\MoveObj\MoveObj.cpp" />
+    <ClCompile Include="Object\MoveObj\Player\OtherPlayer.cpp" />
+    <ClCompile Include="Object\MoveObj\Player\Player.cpp" />
+    <ClCompile Include="Object\Obj.cpp" />
+    <ClCompile Include="Object\StaticObj\Background\Background.cpp" />
+    <ClCompile Include="Object\StaticObj\EditBox\EditBox.cpp" />
+    <ClCompile Include="Object\StaticObj\Effect\EffectObj.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Icon.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Item\EquipParts.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Item\Item.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\KeyIcon\KeyIcon.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\ActiveSkill.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\Bolt\Bolt.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\Divide\Divide.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\Expert\Expert.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\PassiveSkill.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\Plain\Plain.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\Shard\Shard.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\Shard\ShardBullet.cpp" />
+    <ClCompile Include="Object\StaticObj\Icon\Skill\Skill.cpp" />
+    <ClCompile Include="Object\StaticObj\MayaNPC\MayaNPC.cpp" />
+    <ClCompile Include="Object\StaticObj\Portal\Portal.cpp" />
+    <ClCompile Include="Object\StaticObj\Stage\MushmomStage\MushmomStage.cpp" />
+    <ClCompile Include="Object\StaticObj\Stage\MushroomStage\MushroomStage.cpp" />
+    <ClCompile Include="Object\StaticObj\Stage\Stage.cpp" />
+    <ClCompile Include="Object\StaticObj\Stage\Village\Village.cpp" />
+    <ClCompile Include="Object\StaticObj\StaticObj.cpp" />
+    <ClCompile Include="Object\StaticObj\Tab\Tab.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\LoadingObj.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\NoticeWindow.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\TitleUI.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UI.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UIEquip.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UIItem.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UIKey.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UIMain.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UIMinimap.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UISkill.cpp" />
+    <ClCompile Include="Object\StaticObj\UI\UIStat.cpp" />
+    <ClCompile Include="Resources\ResourcesManager.cpp" />
+    <ClCompile Include="Resources\Sound.cpp" />
+    <ClCompile Include="Resources\Texture.cpp" />
+    <ClCompile Include="Scene\InGameScene.cpp" />
+    <ClCompile Include="Scene\Layer.cpp" />
+    <ClCompile Include="Scene\MushmomScene.cpp" />
+    <ClCompile Include="Scene\MushroomScene.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\SceneManager.cpp" />
+    <ClCompile Include="Scene\TitleScene.cpp" />
+    <ClCompile Include="Scene\UILayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Collider\ColliderPixel.h" />
+    <ClInclude Include="Collider\ColliderPoint.h" />
+    <ClInclude Include="Collider\Collider.h" />
+    <ClInclude Include="Collider\ColliderRect.h" />
+    <ClInclude Include="Collider\CollisionManager.h" />
+    <ClInclude Include="Core\Animation.h" />
+    <ClInclude Include="Core\BackCam.h" />
+    <ClInclude Include="Core\Camera.h" />
+    <ClInclude Include="Core\Core.h" />
+    <ClInclude Include="Core\CriticalSectionObj.h" />
+    <ClInclude Include="Core\Input.h" />
+    <ClInclude Include="Core\Mouse.h" />
+    <ClInclude Include="Core\Ref.h" />
+    <ClInclude Include="Core\ServerManager.h" />
+    <ClInclude Include="Core\Timer.h" />
+    <ClInclude Include="DamageManager\DamageManager.h" />
+    <ClInclude Include="Flag.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="ItemManager\ItemManager.h" />
+    <ClInclude Include="Macro.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="Object\MoveObj\Monster\GreenMushroom\GreenMushroom.h" />
+    <ClInclude Include="Object\MoveObj\Monster\Monster.h" />
+    <ClInclude Include="Object\MoveObj\Monster\Mushmom\Mushmom.h" />
+    <ClInclude Include="Object\MoveObj\Monster\Mushroom\Mushroom.h" />
+    <ClInclude Include="Object\MoveObj\MoveObj.h" />
+    <ClInclude Include="Object\MoveObj\Player\OtherPlayer.h" />
+    <ClInclude Include="Object\MoveObj\Player\Player.h" />
+    <ClInclude Include="Object\Obj.h" />
+    <ClInclude Include="Object\StaticObj\Background\Background.h" />
+    <ClInclude Include="Object\StaticObj\EditBox\EditBox.h" />
+    <ClInclude Include="Object\StaticObj\Effect\EffectObj.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Icon.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Item\EquipParts.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Item\Item.h" />
+    <ClInclude Include="Object\StaticObj\Icon\KeyIcon\KeyIcon.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\ActiveSkill.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\Bolt\Bolt.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\Divide\Divide.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\Expert\Expert.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\PassiveSkill.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\Plain\Plain.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\Shard\Shard.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\Shard\ShardBullet.h" />
+    <ClInclude Include="Object\StaticObj\Icon\Skill\Skill.h" />
+    <ClInclude Include="Object\StaticObj\MayaNPC\MayaNPC.h" />
+    <ClInclude Include="Object\StaticObj\Portal\Portal.h" />
+    <ClInclude Include="Object\StaticObj\Stage\MushmomStage\MushmomStage.h" />
+    <ClInclude Include="Object\StaticObj\Stage\MushroomStage\MushroomStage.h" />
+    <ClInclude Include="Object\StaticObj\Stage\Stage.h" />
+    <ClInclude Include="Object\StaticObj\Stage\Village\Village.h" />
+    <ClInclude Include="Object\StaticObj\StaticObj.h" />
+    <ClInclude Include="Object\StaticObj\Tab\Tab.h" />
+    <ClInclude Include="Object\StaticObj\UI\LoadingObj.h" />
+    <ClInclude Include="Object\StaticObj\UI\NoticeWindow.h" />
+    <ClInclude Include="Object\StaticObj\UI\TitleUI.h" />
+    <ClInclude Include="Object\StaticObj\UI\UI.h" />
+    <ClInclude Include="Object\StaticObj\UI\UIEquip.h" />
+    <ClInclude Include="Object\StaticObj\UI\UIItem.h" />
+    <ClInclude Include="Object\StaticObj\UI\UIKey.h" />
+    <ClInclude Include="Object\StaticObj\UI\UIMain.h" />
+    <ClInclude Include="Object\StaticObj\UI\UIMinimap.h" />
+    <ClInclude Include="Object\StaticObj\UI\UISkill.h" />
+    <ClInclude Include="Object\StaticObj\UI\UIStat.h" />
+    <ClInclude Include="packet.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Resources\ResourcesManager.h" />
+    <ClInclude Include="Resources\Sound.h" />
+    <ClInclude Include="Resources\Texture.h" />
+    <ClInclude Include="Scene\InGameScene.h" />
+    <ClInclude Include="Scene\Layer.h" />
+    <ClInclude Include="Scene\MushmomScene.h" />
+    <ClInclude Include="Scene\MushroomScene.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\SceneManager.h" />
+    <ClInclude Include="Scene\TitleScene.h" />
+    <ClInclude Include="Scene\UILayer.h" />
+    <ClInclude Include="Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SBSProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

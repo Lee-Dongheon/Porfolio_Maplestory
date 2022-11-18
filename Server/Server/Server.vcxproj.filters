@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="01. Core">
+      <UniqueIdentifier>{5a8ee865-7dc3-446d-acb3-f1b52970f8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Core\01. DBManager">
+      <UniqueIdentifier>{724948ec-9074-44ba-b45a-61d2ea3e91d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Core\02. ClientManager">
+      <UniqueIdentifier>{711ac3f3-37b0-49cd-827d-31d062cabc85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Core\03. Timer">
+      <UniqueIdentifier>{b6ffa0de-f01b-4746-b6c1-b28122f9d722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene">
+      <UniqueIdentifier>{13597533-8d33-4827-9f67-c3cb73832bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object">
+      <UniqueIdentifier>{69c2520f-7c44-47e5-99ee-fa7f30e62450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Collider">
+      <UniqueIdentifier>{f6b0214b-a7c0-4f64-b9d7-5a17fe084e26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. MoveObj">
+      <UniqueIdentifier>{9c2e0b40-12c7-4419-a8c5-2ac77c2817c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj">
+      <UniqueIdentifier>{06d134f1-b8c8-4597-b6ca-9e58902f8c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. MoveObj\01. Player">
+      <UniqueIdentifier>{8ba3c912-1c06-4638-8482-e800296881ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. MoveObj\02. Monster">
+      <UniqueIdentifier>{013d2af4-af33-4a1d-9001-cfd7cb282dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. MoveObj\02. Monster\01. OrangeMushroom">
+      <UniqueIdentifier>{e4fee126-b922-42c3-8c5e-7c040538f406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Core\04. Input">
+      <UniqueIdentifier>{527e77af-e155-4979-8469-1803efec789e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. MoveObj\02. Monster\02. Mushmom">
+      <UniqueIdentifier>{a7564fdb-7961-4e74-8441-4fd2acf04aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. MoveObj\02. Monster\03. GreenMushroom">
+      <UniqueIdentifier>{b7766ee9-5826-484b-802b-eaaf7a114b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Core\05. Math">
+      <UniqueIdentifier>{a56708e5-c35f-4f99-9ee4-8925497b2b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj\01. Stage">
+      <UniqueIdentifier>{275f2d62-8c23-4a4e-84ec-6d81a86b5b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj\01. Stage\01. Village">
+      <UniqueIdentifier>{c1381fac-91f8-451c-9ac3-b0367e993b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj\01. Stage\02. MushroomStage">
+      <UniqueIdentifier>{b6e575f8-cbe4-4b3a-bc4f-36712eab96f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj\01. Stage\03. MushmomStage">
+      <UniqueIdentifier>{738acf7b-eda5-487d-9e5f-a1caaf73ea49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\01. InGameScenes">
+      <UniqueIdentifier>{2a150f6b-b9fd-414d-8c4e-38212e36a850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Core\06. CriticalSection">
+      <UniqueIdentifier>{afecad0d-1d2b-407a-8277-f0258d6d4437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj\02. ShopNPC">
+      <UniqueIdentifier>{4dc8b660-a219-453e-a0eb-2d1e370cff58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj\03. Item">
+      <UniqueIdentifier>{b76d5961-1d98-4898-802b-f6d5211a2cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. StaticObj\04. Skill">
+      <UniqueIdentifier>{50b9b8d8-78eb-4ae8-bb19-575aad9e959d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Core.cpp">
+      <Filter>01. Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Ref.cpp">
+      <Filter>01. Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DBManager.cpp">
+      <Filter>01. Core\01. DBManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Timer.cpp">
+      <Filter>01. Core\03. Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ClientManager.cpp">
+      <Filter>01. Core\02. ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\Collider.cpp">
+      <Filter>04. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\ColliderPixel.cpp">
+      <Filter>04. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\ColliderRect.cpp">
+      <Filter>04. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\CollisionManager.cpp">
+      <Filter>04. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Obj.cpp">
+      <Filter>03. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MoveObj\MoveObj.cpp">
+      <Filter>03. Object\01. MoveObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\StaticObj.cpp">
+      <Filter>03. Object\02. StaticObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MoveObj\Player\Player.cpp">
+      <Filter>03. Object\01. MoveObj\01. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MoveObj\Monster\Monster.cpp">
+      <Filter>03. Object\01. MoveObj\02. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MoveObj\Monster\Mushroom\Mushroom.cpp">
+      <Filter>03. Object\01. MoveObj\02. Monster\01. OrangeMushroom</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>02. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>02. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Input.cpp">
+      <Filter>01. Core\04. Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MoveObj\Monster\Mushmom\Mushmom.cpp">
+      <Filter>03. Object\01. MoveObj\02. Monster\02. Mushmom</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>01. Core\05. Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MoveObj\Monster\GreenMushroom\GreenMushroom.cpp">
+      <Filter>03. Object\01. MoveObj\02. Monster\03. GreenMushroom</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\VillageScene.cpp">
+      <Filter>02. Scene\01. InGameScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MushroomScene.cpp">
+      <Filter>02. Scene\01. InGameScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MushmomScene.cpp">
+      <Filter>02. Scene\01. InGameScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\Stage\Stage.cpp">
+      <Filter>03. Object\02. StaticObj\01. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\Stage\Village\Village.cpp">
+      <Filter>03. Object\02. StaticObj\01. Stage\01. Village</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\Stage\MushroomStage\MushroomStage.cpp">
+      <Filter>03. Object\02. StaticObj\01. Stage\02. MushroomStage</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\Stage\MushmomStage\MushmomStage.cpp">
+      <Filter>03. Object\02. StaticObj\01. Stage\03. MushmomStage</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CriticalSectionObj.cpp">
+      <Filter>01. Core\06. CriticalSection</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\ShopNPC\ShopNPC.cpp">
+      <Filter>03. Object\02. StaticObj\02. ShopNPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\Item\Item.cpp">
+      <Filter>03. Object\02. StaticObj\03. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StaticObj\Skill\Skill.cpp">
+      <Filter>03. Object\02. StaticObj\04. Skill</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="server.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="packet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Core.h">
+      <Filter>01. Core</Filter>
+    </ClInclude>
+    <ClInclude Include="macro.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="flag.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Ref.h">
+      <Filter>01. Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DBManager.h">
+      <Filter>01. Core\01. DBManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Timer.h">
+      <Filter>01. Core\03. Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ClientManager.h">
+      <Filter>01. Core\02. ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\Collider.h">
+      <Filter>04. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\ColliderPixel.h">
+      <Filter>04. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\ColliderRect.h">
+      <Filter>04. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\CollisionManager.h">
+      <Filter>04. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Obj.h">
+      <Filter>03. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MoveObj\MoveObj.h">
+      <Filter>03. Object\01. MoveObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\StaticObj.h">
+      <Filter>03. Object\02. StaticObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MoveObj\Player\Player.h">
+      <Filter>03. Object\01. MoveObj\01. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MoveObj\Monster\Monster.h">
+      <Filter>03. Object\01. MoveObj\02. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MoveObj\Monster\Mushroom\Mushroom.h">
+      <Filter>03. Object\01. MoveObj\02. Monster\01. OrangeMushroom</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>02. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>02. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Input.h">
+      <Filter>01. Core\04. Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MoveObj\Monster\Mushmom\Mushmom.h">
+      <Filter>03. Object\01. MoveObj\02. Monster\02. Mushmom</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>01. Core\05. Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MoveObj\Monster\GreenMushroom\GreenMushroom.h">
+      <Filter>03. Object\01. MoveObj\02. Monster\03. GreenMushroom</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\VillageScene.h">
+      <Filter>02. Scene\01. InGameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MushroomScene.h">
+      <Filter>02. Scene\01. InGameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MushmomScene.h">
+      <Filter>02. Scene\01. InGameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\Stage\Stage.h">
+      <Filter>03. Object\02. StaticObj\01. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\Stage\Village\Village.h">
+      <Filter>03. Object\02. StaticObj\01. Stage\01. Village</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\Stage\MushroomStage\MushroomStage.h">
+      <Filter>03. Object\02. StaticObj\01. Stage\02. MushroomStage</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\Stage\MushmomStage\MushmomStage.h">
+      <Filter>03. Object\02. StaticObj\01. Stage\03. MushmomStage</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CriticalSectionObj.h">
+      <Filter>01. Core\06. CriticalSection</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\ShopNPC\ShopNPC.h">
+      <Filter>03. Object\02. StaticObj\02. ShopNPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\Item\Item.h">
+      <Filter>03. Object\02. StaticObj\03. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StaticObj\Skill\Skill.h">
+      <Filter>03. Object\02. StaticObj\04. Skill</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
